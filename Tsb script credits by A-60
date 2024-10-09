@@ -271,7 +271,7 @@ Callback = <function> - The function of the button.
 ]]
 
 Tab:AddButton({
-	Name = "Arcaura Moveset (Hero Hunter)",
+	Name = "Arcaura/Jester Moveset (Hero Hunter)",
 	Callback = function()
       		loadstring(game:HttpGet("https://raw.githubusercontent.com/Reapvitalized/TSB/refs/heads/main/ARCAURA.lua"))()
   	end    
