@@ -95,7 +95,7 @@ Callback = <function> - The function of the button.
 ]]
 
 Tab:AddButton({
-	Name = "Hakari Moveset (The Strongest Hero)",
+	Name = "Nosakatan Moveset (The Strongest Hero)",
 	Callback = function()
       		loadstring(game:HttpGet("https://rawscripts.net/raw/The-Strongest-Battlegrounds-Hero-to-True-Nosakatan-18742"))()
   	end    
@@ -409,6 +409,18 @@ Tab:AddButton({
 	Name = "Mixed Moveset (The Strongest Hero)",
 	Callback = function()
       		loadstring(game:HttpGet("https://raw.githubusercontent.com/Trying-glitch/RlxProject/main/custommoveset.txt"))()
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+Tab:AddButton({
+	Name = "Hakari Moveset (The Strongest Hero)",
+	Callback = function()
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/hamletirl/HakariTSB/refs/heads/main/Main"))()
   	end    
 })
 
