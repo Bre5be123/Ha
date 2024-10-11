@@ -441,6 +441,30 @@ Name = <string> - The name of the button.
 Callback = <function> - The function of the button.
 ]]
 
+Tab:AddButton({
+	Name = "Sukuna Moveset (Blade Master)",
+	Callback = function()
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/berrizscript/Scripts_/refs/heads/main/Sukuna%20Beta"))()
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+Tab:AddButton({
+	Name = "KJ V3 Moveset (The Strongest Hero)(Key: KJAlpha)",
+	Callback = function()
+      		loadstring(game:HttpGet("https://rawscripts.net/raw/The-Strongest-Battlegrounds-Best-KJ-Script-19976"))()
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
 local Tab = Window:MakeTab({
 	Name = "Characters X Characters",
 	Icon = "rbxassetid://4483345998",
