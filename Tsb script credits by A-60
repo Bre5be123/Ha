@@ -442,7 +442,7 @@ Callback = <function> - The function of the button.
 ]]
 
 Tab:AddButton({
-	Name = "Sukuna Moveset (Blade Master)",
+	Name = "Sukuna V2 Moveset (Blade Master)",
 	Callback = function()
       		loadstring(game:HttpGet("https://raw.githubusercontent.com/berrizscript/Scripts_/refs/heads/main/Sukuna%20Beta"))()
   	end    
@@ -457,6 +457,23 @@ Tab:AddButton({
 	Name = "KJ V3 Moveset (The Strongest Hero)(Key: KJAlpha)",
 	Callback = function()
       		loadstring(game:HttpGet("https://rawscripts.net/raw/The-Strongest-Battlegrounds-Best-KJ-Script-19976"))()
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+Tab:AddButton({
+	Name = "Dio V2 Moveset (Hero Hunter)",
+	Callback = function()
+      		getgenv().Settings = {
+    Morph = false, -- (true/false)
+    TalkInChat = false -- (true/false) If you want to chat for moves
+}
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Medley-Taboritsky/RobloxScripting/refs/heads/main/DIO_Garou_TSB"))()
   	end    
 })
 
