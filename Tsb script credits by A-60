@@ -429,6 +429,18 @@ Name = <string> - The name of the button.
 Callback = <function> - The function of the button.
 ]]
 
+Tab:AddButton({
+	Name = "KJ V2 Moveset (The Strongest Hero)",
+	Callback = function()
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/Gokou300/Kj-script-moveset-new-update/refs/heads/main/Kj%20script%20moveset%20credit%20to%20Manuth"))()
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
 local Tab = Window:MakeTab({
 	Name = "Characters X Characters",
 	Icon = "rbxassetid://4483345998",
