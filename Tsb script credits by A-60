@@ -482,6 +482,30 @@ Name = <string> - The name of the button.
 Callback = <function> - The function of the button.
 ]]
 
+Tab:AddButton({
+	Name = "Yuji Moveset (Hero Hunter)",
+	Callback = function()
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/xVicity/GLACIER/main/LATEST.lua"))()
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+Tab:AddButton({
+	Name = "Floppa Moveset (Destructive Cyborg)(Use In Characters Selection)",
+	Callback = function()
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/Floppa-hub/Test-v2/refs/heads/main/Floppa%20moveset"))()
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
 local Tab = Window:MakeTab({
 	Name = "Characters X Characters",
 	Icon = "rbxassetid://4483345998",
