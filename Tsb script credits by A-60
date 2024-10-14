@@ -367,7 +367,7 @@ Callback = <function> - The function of the button.
 ]]
 
 Tab:AddButton({
-	Name = "Tokyo's Unsealed Gojo Moveset (The Strongest Hero)",
+	Name = "Unsealed Gojo Moveset (The Strongest Hero)",
 	Callback = function()
       		loadstring(game:HttpGet("https://raw.githubusercontent.com/Giahao135/Tokyo/refs/heads/main/Tokyo"))()
   	end    
@@ -418,9 +418,9 @@ Callback = <function> - The function of the button.
 ]]
 
 Tab:AddButton({
-	Name = "Hakari Moveset (The Strongest Hero)",
+	Name = "Hakari Moveset (The Strongest Hero)(Wisp Version)",
 	Callback = function()
-      		loadstring(game:HttpGet("https://raw.githubusercontent.com/hamletirl/HakariTSB/refs/heads/main/Main"))()
+      		loadstring(game:HttpGet"https://raw.githubusercontent.com/Wi-sp/Limitless-legacy/refs/heads/main/GUI")()
   	end    
 })
 
@@ -498,6 +498,18 @@ Tab:AddButton({
 	Name = "Floppa Moveset (Destructive Cyborg)(Use In Characters Selection)",
 	Callback = function()
       		loadstring(game:HttpGet("https://raw.githubusercontent.com/Floppa-hub/Test-v2/refs/heads/main/Floppa%20moveset"))()
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+Tab:AddButton({
+	Name = "Jun V2 Moveset (The Strongest Hero)",
+	Callback = function()
+      		loadstring(game:HttpGet("https://pastefy.app/1m6k8kOE/raw"))()
   	end    
 })
 
