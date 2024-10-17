@@ -530,28 +530,56 @@ Name = <string> - The name of the button.
 Callback = <function> - The function of the button.
 ]]
 
-local Tab = Window:MakeTab({
-	Name = "Characters X Characters",
-	Icon = "rbxassetid://4483345998",
-	PremiumOnly = false
+Tab:AddButton({
+	Name = "KJ V1.5 Moveset (The Strongest Hero)(In Movesets)",
+	Callback = function()
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/xVicity/GLACIER/main/LATEST.lua"))()
+  	end    
 })
 
 --[[
-Name = <string> - The name of the tab.
-Icon = <string> - The icon of the tab.
-PremiumOnly = <bool> - Makes the tab accessible to Sirus Premium users only.
-]]
-
-local Section = Tab:AddSection({
-	Name = "LocalPlayer 1.5"
-})
-
---[[
-Name = <string> - The name of the section.
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
 ]]
 
 Tab:AddButton({
-	Name = "Garou X Suiryu",
+	Name = "Gojo V0.1 Moveset (Wild Psychic)(In Movesets)",
+	Callback = function()
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/xVicity/GLACIER/main/LATEST.lua"))()
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+Tab:AddButton({
+	Name = "Yuji/Sukuna Moveset (Hero Hunter)(In Movesets)",
+	Callback = function()
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/xVicity/GLACIER/main/LATEST.lua"))()
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+Tab:AddButton({
+	Name = "Gojo V0.5 Moveset (The Strongest Hero)(In Movesets)",
+	Callback = function()
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/xVicity/GLACIER/main/LATEST.lua"))()
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+Tab:AddButton({
+	Name = "Suiryu Moveset (Hero Huntet)(Fake)",
 	Callback = function()
       		loadstring(game:HttpGet"https://gist.githubusercontent.com/kjremaker/b092496fc11a57e2c50477154176fa3e/raw/2148f00a036a1799118541765675f3f6a0f8adae/GAROU%20TO%20SURIYU%20BETTER%20THAN%20THE%20OTHERS%20FR")()
   	end    
@@ -563,7 +591,7 @@ Callback = <function> - The function of the button.
 ]]
 
 Tab:AddButton({
-	Name = "Saitama X Gojo",
+	Name = "Gojo V1.3 Moveset (The Strongest Hero)",
 	Callback = function()
       		loadstring(game:HttpGet("https://rawscripts.net/raw/The-Strongest-Battlegrounds-Gojo-Moveset-Script-FIX-16704"))()
   	end    
@@ -575,9 +603,9 @@ Callback = <function> - The function of the button.
 ]]
 
 Tab:AddButton({
-	Name = "Garou X KJ",
+	Name = "KJ V1.5 Moveset (Hero Hunter)",
 	Callback = function()
-      		loadstring(game:HttpGet"https://raw.githubusercontent.com/h8h88/hubfr/main/hubfr")()
+      		loadstringloadstring(game:HttpGet("https://raw.githubusercontent.com/h8h88/hubfr/main/hubfr"))()
   	end    
 })
 
