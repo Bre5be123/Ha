@@ -95,7 +95,7 @@ Callback = <function> - The function of the button.
 ]]
 
 Tab:AddButton({
-	Name = "Nosakatan Moveset (The Strongest Hero)",
+	Name = "Nokotan Moveset (The Strongest Hero)",
 	Callback = function()
       		loadstring(game:HttpGet("https://rawscripts.net/raw/The-Strongest-Battlegrounds-Hero-to-True-Nosakatan-18742"))()
   	end    
@@ -418,7 +418,7 @@ Callback = <function> - The function of the button.
 ]]
 
 Tab:AddButton({
-	Name = "Hakari Moveset (The Strongest Hero)(Wisp Version)",
+	Name = "Hakari Moveset (The Strongest Hero)",
 	Callback = function()
       		loadstring(game:HttpGet"https://raw.githubusercontent.com/Wi-sp/Limitless-legacy/refs/heads/main/GUI")()
   	end    
@@ -510,6 +510,18 @@ Tab:AddButton({
 	Name = "Jun V2 Moveset (The Strongest Hero)",
 	Callback = function()
       		loadstring(game:HttpGet("https://pastefy.app/1m6k8kOE/raw"))()
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+Tab:AddButton({
+	Name = "Hakari V2 Moveset (The Strongest Hero)",
+	Callback = function()
+      		loadstring(game:HttpGet("https://pastebin.com/raw/eEDYWj8p"))()
   	end    
 })
 
