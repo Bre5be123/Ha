@@ -531,7 +531,7 @@ Callback = <function> - The function of the button.
 ]]
 
 Tab:AddButton({
-	Name = "KJ V1.5 Moveset (The Strongest Hero)(In Movesets)",
+	Name = "KJ V1.5 Moveset (The Strongest Hero)(Use In Movesets Section)",
 	Callback = function()
       		loadstring(game:HttpGet("https://raw.githubusercontent.com/xVicity/GLACIER/main/LATEST.lua"))()
   	end    
@@ -543,7 +543,7 @@ Callback = <function> - The function of the button.
 ]]
 
 Tab:AddButton({
-	Name = "Gojo V0.1 Moveset (Wild Psychic)(In Movesets)",
+	Name = "Gojo V0.1 Moveset (Wild Psychic)(Use In Movesets Section)",
 	Callback = function()
       		loadstring(game:HttpGet("https://raw.githubusercontent.com/xVicity/GLACIER/main/LATEST.lua"))()
   	end    
@@ -555,7 +555,7 @@ Callback = <function> - The function of the button.
 ]]
 
 Tab:AddButton({
-	Name = "Yuji/Sukuna Moveset (Hero Hunter)(In Movesets)",
+	Name = "Yuji/Sukuna Moveset (Hero Hunter)(Use In Movesets Section)",
 	Callback = function()
       		loadstring(game:HttpGet("https://raw.githubusercontent.com/xVicity/GLACIER/main/LATEST.lua"))()
   	end    
@@ -567,7 +567,7 @@ Callback = <function> - The function of the button.
 ]]
 
 Tab:AddButton({
-	Name = "Gojo V0.5 Moveset (The Strongest Hero)(In Movesets)",
+	Name = "Gojo V0.5 Moveset (The Strongest Hero)(Use In Movesets Section)",
 	Callback = function()
       		loadstring(game:HttpGet("https://raw.githubusercontent.com/xVicity/GLACIER/main/LATEST.lua"))()
   	end    
@@ -579,7 +579,7 @@ Callback = <function> - The function of the button.
 ]]
 
 Tab:AddButton({
-	Name = "Suiryu Moveset (Hero Huntet)(Fake)",
+	Name = "Suiryu Moveset (Hero Hunter)(Fake)",
 	Callback = function()
       		loadstring(game:HttpGet"https://gist.githubusercontent.com/kjremaker/b092496fc11a57e2c50477154176fa3e/raw/2148f00a036a1799118541765675f3f6a0f8adae/GAROU%20TO%20SURIYU%20BETTER%20THAN%20THE%20OTHERS%20FR")()
   	end    
@@ -873,6 +873,42 @@ local fourthAnimIdsToStop = {10479335397}
 local fourthReplacementAnimId = 17838006839
 local fourthAnimspeed = 1
 handleAnimationDetection(fourthAnimIdsToStop, fourthReplacementAnimId, fourthAnimspeed)
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+Tab:AddButton({
+	Name = "Saga Moveset (Hero Hunter)",
+	Callback = function()
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/LolnotaKid/CustomV2/refs/heads/main/CustomAnimV2.txt"))()
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+Tab:AddButton({
+	Name = "Bomb Moveset (The Strongest Hero)",
+	Callback = function()
+      		loadstring(game:HttpGet('https://raw.githubusercontent.com/Gokou300/Gokou300/refs/heads/main/BOMB_SAITAMA_TSB'))()
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+Tab:AddButton({
+	Name = "KJ V2.5 Moveset (The Strongest Hero)(Use In Character Selection)",
+	Callback = function()
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/Herobrine3276762/KJ/refs/heads/main/KJ-SCRIPT-MADE-BY-%40HEROBRINE-ON-DISCORD.lua"))()
   	end    
 })
 
