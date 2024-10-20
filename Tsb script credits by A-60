@@ -591,7 +591,7 @@ Callback = <function> - The function of the button.
 ]]
 
 Tab:AddButton({
-	Name = "Gojo V1.3 Moveset (The Strongest Hero)",
+	Name = "Gojo V0.7 Moveset (The Strongest Hero)",
 	Callback = function()
       		loadstring(game:HttpGet("https://rawscripts.net/raw/The-Strongest-Battlegrounds-Gojo-Moveset-Script-FIX-16704"))()
   	end    
@@ -993,6 +993,42 @@ Tab:AddButton({
 	Name = "Megumi Moveset (Hero Hunter)(Use In Movesets Section)",
 	Callback = function()
       		loadstring(game:HttpGet("https://raw.githubusercontent.com/Gokou300/Gokou300/refs/heads/main/local%20983185f7b0f46a55e497cc29b597ce56lol%20camera%20hub%20x%209.0%20TSB"))()
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+Tab:AddButton({
+	Name = "Sonic Exe Moveset (Hero Hunter)",
+	Callback = function()
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/Nova2ezz/sonic-exe-moveset-3/refs/heads/main/3"))()
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+Tab:AddButton({
+	Name = "Maximum Output Gojo Moveset (The Strongest Hero)",
+	Callback = function()
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/Gokou300/Gokou300/refs/heads/main/GOJO_MAXIMUM_OUTPUT_SAITAMA_TSB"))()
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+Tab:AddButton({
+	Name = "Gojo V2 Moveset (Hero Hunter)",
+	Callback = function()
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/Bre5be123/Bsl/refs/heads/main/H%E1%BB%A5bh?token=GHSAT0AAAAAACYTRGTVIQHABEQOKCUSNXJUZYU7HPQ"))()
   	end    
 })
 
