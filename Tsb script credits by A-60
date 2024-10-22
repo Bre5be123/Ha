@@ -1028,7 +1028,19 @@ Callback = <function> - The function of the button.
 Tab:AddButton({
 	Name = "Gojo V2 Moveset (Hero Hunter)",
 	Callback = function()
-      		loadstring(game:HttpGet("https://raw.githubusercontent.com/Bre5be123/Bsl/refs/heads/main/H%E1%BB%A5bh?token=GHSAT0AAAAAACYTRGTVIQHABEQOKCUSNXJUZYU7HPQ"))()
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/Bre5be123/Blahblahblah/refs/heads/main/Justincase?token=GHSAT0AAAAAACYTRGTUINUWCEL2Q2B67X5YZYXHS7Q"))()
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+Tab:AddButton({
+	Name = "Bomber Moveset (The Strongest Hero)",
+	Callback = function()
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/Bre5be123/Blahblahblah/refs/heads/main/Justincase?token=GHSAT0AAAAAACYTRGTUINUWCEL2Q2B67X5YZYXHS7Q"))()
   	end    
 })
 
