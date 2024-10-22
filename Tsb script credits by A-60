@@ -495,18 +495,6 @@ Callback = <function> - The function of the button.
 ]]
 
 Tab:AddButton({
-	Name = "Floppa Moveset (Destructive Cyborg)(Use In Characters Selection)",
-	Callback = function()
-      		loadstring(game:HttpGet("https://raw.githubusercontent.com/Floppa-hub/Test-v2/refs/heads/main/Floppa%20moveset"))()
-  	end    
-})
-
---[[
-Name = <string> - The name of the button.
-Callback = <function> - The function of the button.
-]]
-
-Tab:AddButton({
 	Name = "Jun V2 Moveset (The Strongest Hero)",
 	Callback = function()
       		loadstring(game:HttpGet("https://pastefy.app/1m6k8kOE/raw"))()
@@ -1041,6 +1029,30 @@ Tab:AddButton({
 	Name = "Bomber Moveset (The Strongest Hero)",
 	Callback = function()
       		loadstring(game:HttpGet("https://raw.githubusercontent.com/Bre5be123/Blahblahblah/refs/heads/main/Justincase?token=GHSAT0AAAAAACYTRGTUINUWCEL2Q2B67X5YZYXHS7Q"))()
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+Tab:AddButton({
+	Name = "Chara Moveset (Blade Master)",
+	Callback = function()
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/Bre5be123/Blahblahblah/refs/heads/main/Huh?token=GHSAT0AAAAAACYTRGTUGDRAHY3HBIRRYNGSZYXUZ5A"))()
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+Tab:AddButton({
+	Name = "Floppa Moveset (Destructive Cyborg)(Use In Characters Section)",
+	Callback = function()
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/Bre5be123/Blahblahblah/refs/heads/main/Floppa?token=GHSAT0AAAAAACYTRGTUDXPVPL4WOPUWYH5IZYXU6GA"))()
   	end    
 })
 
