@@ -69,7 +69,7 @@ local baseButton = hotbarFrame:FindFirstChild("4").Base
 local ToolName = baseButton.ToolName
 
 
-ToolName.Text = "Gravity Hands" -- put the name of the base move 4
+ToolName.Text = "Hands" -- put the name of the base move 4
 
 
 local Players = game:GetService("Players")
@@ -924,4 +924,4 @@ player.CharacterAdded:Connect(function(newCharacter)
 
     end
 
-end)
+end) game.Players.LocalPlayer.Backpack.Uppercut:Destroy()
