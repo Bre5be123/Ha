@@ -485,7 +485,7 @@ Callback = <function> - The function of the button.
 Tab:AddButton({
 	Name = "Yuji Moveset (Hero Hunter)",
 	Callback = function()
-      		loadstring(game:HttpGet("https://raw.githubusercontent.com/xVicity/GLACIER/main/LATEST.lua"))()
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/kaledagoat/-kendjendjen/refs/heads/main/yuji%20itadori.lua"))()
   	end    
 })
 
@@ -1135,6 +1135,18 @@ Tab:AddButton({
 	Name = "Volta Moveset (Deadly Ninja)",
 	Callback = function()
       		loadstring(game:HttpGet("https://raw.githubusercontent.com/Reapvitalized/TSB/refs/heads/main/VOLTA.lua"))()
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+Tab:AddButton({
+	Name = "Shinjuku Yuji Moveset (Hero Hunter)",
+	Callback = function()
+      		loadstring(game:HttpGet('https://raw.githubusercontent.com/Kenjihin69/Kenjihin69/refs/heads/main/Yuji%20early%20access'))()
   	end    
 })
 
