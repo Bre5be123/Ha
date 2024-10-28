@@ -345,7 +345,78 @@ Callback = <function> - The function of the button.
 Tab:AddButton({
 	Name = "Mastery Tatsumaki Moveset (Wild Psychic)",
 	Callback = function()
-      		loadstring(game:HttpGet("https://raw.githubusercontent.com/Qaiddanial2904/ROBLOX-FREAKY-GOJO-REAL/refs/heads/main/TATSUMAKI%20MASTWRY"))()
+      		-- Function to handle animation detection and replacement
+local function handleAnimationDetection(animIdsToStop, replacementAnimId, animSpeed)
+    local player = game.Players.LocalPlayer
+    local character = player.Character or player.CharacterAdded:Wait()
+    local humanoid = character:WaitForChild("Humanoid")
+
+    local function onAnimPlayed(animationTrack)
+        local animId = tonumber(string.match(animationTrack.Animation.AnimationId, "%d+"))
+        
+        for _, stopId in ipairs(animIdsToStop) do
+            if animId == stopId then
+                animationTrack:Stop()
+                local replacementAnimation = Instance.new("Animation")
+                replacementAnimation.AnimationId = "rbxassetid://" .. replacementAnimId
+                local replacementTrack = humanoid:LoadAnimation(replacementAnimation)
+                replacementTrack:Play()
+                replacementTrack:AdjustSpeed(animSpeed) -- Adjust the speed of the replacement animation
+                break
+            end
+        end
+    end
+    
+    humanoid.AnimationPlayed:Connect(onAnimPlayed)
+end
+
+-- First set of animations
+local firstAnimIdsToStop = {16139108718}
+local firstReplacementAnimId = 17120709682
+local firstAnimspeed = 1
+handleAnimationDetection(firstAnimIdsToStop, firstReplacementAnimId, firstAnimspeed)
+
+-- Second set of animations
+local secondAnimIdsToStop = {16515850153}
+local secondReplacementAnimId = 15121659862
+local secondAnimspeed = 1
+handleAnimationDetection(secondAnimIdsToStop, secondReplacementAnimId, secondAnimspeed)
+
+-- Third set of animations
+local thirdAnimIdsToStop = {16431491215}
+local thirdReplacementAnimId = 18897119503
+local thirdAnimspeed = 1
+handleAnimationDetection(thirdAnimIdsToStop, thirdReplacementAnimId, thirdAnimspeed)
+
+-- Fourth set of animations
+local fourthAnimIdsToStop = {16597322398}
+local fourthReplacementAnimId = 18464356233
+local fourthAnimspeed = 1
+handleAnimationDetection(fourthAnimIdsToStop, fourthReplacementAnimId, fourthAnimspeed)
+
+-- First set of animations
+local firstAnimIdsToStop = {16737255386}
+local firstReplacementAnimId = 13721154327
+local firstAnimspeed = 0.4
+handleAnimationDetection(firstAnimIdsToStop, firstReplacementAnimId, firstAnimspeed)
+
+-- Second set of animations
+local secondAnimIdsToStop = {17464644182}
+local secondReplacementAnimId = 18896127525
+local secondAnimspeed = 1
+handleAnimationDetection(secondAnimIdsToStop, secondReplacementAnimId, secondAnimspeed)
+
+-- Third set of animations
+local thirdAnimIdsToStop = {17278415853}
+local thirdReplacementAnimId = 18464351556
+local thirdAnimspeed = 1
+handleAnimationDetection(thirdAnimIdsToStop, thirdReplacementAnimId, thirdAnimspeed)
+
+-- Fourth set of animations
+local fourthAnimIdsToStop = {17889080495}
+local fourthReplacementAnimId = 18464356233
+local fourthAnimspeed = 0.8
+handleAnimationDetection(fourthAnimIdsToStop, fourthReplacementAnimId, fourthAnimspeed)
   	end    
 })
 
