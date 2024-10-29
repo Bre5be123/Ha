@@ -1,0 +1,697 @@
+local p = game.Players.LocalPlayer
+local g = p.PlayerGui
+local h = g:FindFirstChild("Hotbar")
+local b = h:FindFirstChild("Backpack")
+local f = b:FindFirstChild("Hotbar")
+local btn1 = f:FindFirstChild("1").Base
+btn1.ToolName.Text = "Jumpscare"
+
+local btn2 = f:FindFirstChild("2").Base
+btn2.ToolName.Text = "Fury's of HAND Slash"
+
+local btn3 = f:FindFirstChild("3").Base
+btn3.ToolName.Text = "KILLER MOVE:Touchable Doom"
+
+local btn4 = f:FindFirstChild("4").Base
+btn4.ToolName.Text = "Shoulder Vanish Blast Throw"
+
+local Players = game:GetService("Players")
+
+local player = Players.LocalPlayer
+
+local playerGui = player:WaitForChild("PlayerGui")
+
+local humanoid = player.Character:WaitForChild("Humanoid")
+
+-- credits
+local function callback(Text)
+	if Text == "Button1 text" then
+		print ("Answer")
+	elseif Text == ("Button2 text") then
+		print ("Answer2")
+	end
+end
+
+local NotificationBindable = Instance.new("BindableFunction")
+NotificationBindable.OnInvoke = callback
+--
+game.StarterGui:SetCore("SendNotification",  {
+	Title = "Credits"; --the title
+	Text = "AeryAlex: Main Scripter, Cid kagenou: Scripter, Goku:Helper"; --the text
+	Icon = ""; --icon if you want
+	Duration = 1000000; --for how many seconds it should be there
+	Button1 = "W Private Script"; --option
+	Callback = NotificationBindable;
+})
+
+message = "Ready for randoms? because i got perfect one for this."
+game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(message, "All")
+
+local function findGuiAndSetText()
+
+	local screenGui = playerGui:FindFirstChild("ScreenGui")
+
+	if screenGui then
+
+		local magicHealthFrame = screenGui:FindFirstChild("MagicHealth")
+
+		if magicHealthFrame then
+
+			local textLabel = magicHealthFrame:FindFirstChild("TextLabel")
+
+			if textLabel then
+
+				textLabel.Text = "Really Random.."
+
+			end
+
+		end
+
+	end
+
+end
+
+
+playerGui.DescendantAdded:Connect(findGuiAndSetText)
+
+findGuiAndSetText()
+--NORMAL PUNCH
+local animationId = 10468665991
+
+
+local player = game.Players.LocalPlayer
+
+local character = player.Character or player.CharacterAdded:Wait()
+
+local humanoid = character:WaitForChild("Humanoid")
+
+local function onAnimationPlayed(animationTrack)
+
+	if animationTrack.Animation.AnimationId == "rbxassetid://" .. animationId then
+
+		local p = game.Players.LocalPlayer
+
+		local Humanoid = p.Character:WaitForChild("Humanoid")
+
+		for _, animTrack in pairs(Humanoid:GetPlayingAnimationTracks()) do
+
+			animTrack:Stop()
+
+		end
+
+		local player = game.Players.LocalPlayer
+		local humanoid = player.Character.Humanoid
+
+		local anim = Instance.new("Animation")
+		anim.AnimationId = "rbxassetid://14347157007"
+
+		local playAnim = humanoid:LoadAnimation(anim)
+		playAnim:Play()
+		playAnim:AdjustSpeed(3)
+
+
+		task.wait(0.6)
+		local soundeffect = Instance.new("Sound")
+		soundeffect.SoundId = "rbxassetid://1841250414"
+		soundeffect.Parent = game.Players.LocalPlayer.Character.Torso
+		soundeffect:Play()
+		soundeffect.Volume = 999
+		soundeffect.TimePosition = 0.1
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")
+		local EmitBatch2 = ReplicatedStorage.Resources.KJEffects["SpinnerEndWind"].spinningemit:Clone()
+		local player = game.Players.LocalPlayer
+		local character = player.Character or player.CharacterAdded:Wait()
+
+		EmitBatch2.Parent = character:WaitForChild("HumanoidRootPart")
+
+		for _, child in ipairs(EmitBatch2:GetChildren()) do
+			if child:IsA("ParticleEmitter") then
+				child:Emit(20) -- Emit 1 particle
+			end
+		end
+		local m = math.random(1,100)
+		if m <= 15 then
+			local final1 = game.ReplicatedStorage.Resources.KJEffects["KJWallCombo"].FinalImpact.Attachment:Clone()
+			final1.Parent = game.Players.LocalPlayer.Character["Torso"]
+			for     _, child in ipairs(final1:GetChildren()) do
+				if child:IsA("ParticleEmitter") then -- Check if the child is a ParticleEmitter
+					child:Emit(5)
+					-- MORE SCRIPT IF YOU WANT IF DONT REMOVE ME
+				end
+			end
+		end
+	end
+end
+
+--CONCEUSTIVE PUNCHES
+humanoid.AnimationPlayed:Connect(onAnimationPlayed)
+
+
+local animationId = 10466974800
+
+
+local player = game.Players.LocalPlayer
+
+local character = player.Character or player.CharacterAdded:Wait()
+
+local humanoid = character:WaitForChild("Humanoid")
+
+
+local function onAnimationPlayed(animationTrack)
+
+	if animationTrack.Animation.AnimationId == "rbxassetid://" .. animationId then
+
+
+		local p = game.Players.LocalPlayer
+
+		local Humanoid = p.Character:WaitForChild("Humanoid")
+
+
+		for _, animTrack in pairs(Humanoid:GetPlayingAnimationTracks()) do
+
+			animTrack:Stop()
+
+		end
+
+		local AnimAnim = Instance.new("Animation")
+
+		AnimAnim.AnimationId = "rbxassetid://13560306510"
+
+		local Anim = Humanoid:LoadAnimation(AnimAnim)
+
+
+		local startTime = 0
+
+
+		Anim:Play()
+
+		Anim:AdjustSpeed(0)
+
+		Anim.TimePosition = startTime
+
+		Anim:AdjustSpeed(2.5)
+
+		local function slashs()
+			local soundeffect = Instance.new("Sound")
+			soundeffect.SoundId = "rbxassetid://935843979"
+			soundeffect.Parent = game.Players.LocalPlayer.Character.Torso
+			soundeffect:Play()
+			soundeffect.Volume = 999
+			soundeffect.TimePosition = 0
+		end
+
+		local function ddd()
+			local ReplicatedStorage = game:GetService("ReplicatedStorage")
+			local EmitBatch2 = ReplicatedStorage.Resources.KJEffects["ThrowPart"].Throw:Clone()
+			local player = game.Players.LocalPlayer
+			local character = player.Character or player.CharacterAdded:Wait()
+
+			EmitBatch2.Parent = character:WaitForChild("HumanoidRootPart")
+
+			for _, child in ipairs(EmitBatch2:GetChildren()) do
+				if child:IsA("ParticleEmitter") then
+					child:Emit(3) -- Emit 1 particle
+				end
+			end
+		end
+
+		local function aaa()
+			local ReplicatedStorage = game:GetService("ReplicatedStorage")
+			local EmitBatch2 = ReplicatedStorage.Resources.KJEffects["TwistyParticles"].twisty:Clone()
+			local player = game.Players.LocalPlayer
+			local character = player.Character or player.CharacterAdded:Wait()
+
+			EmitBatch2.Parent = character:WaitForChild("HumanoidRootPart")
+
+			for _, child in ipairs(EmitBatch2:GetChildren()) do
+				if child:IsA("ParticleEmitter") then
+					child:Emit(15) -- Emit 1 particle
+				end
+			end
+
+		end
+		local counter = 0
+
+		while counter < 13 do
+			task.wait(0.1)
+			slashs()
+			ddd()
+			aaa()
+			counter = counter + 1
+		end
+
+		-- MORE SCRIPT HERE IF YOU WANT
+	end
+
+end
+
+
+humanoid.AnimationPlayed:Connect(onAnimationPlayed)
+
+--shove
+local animationId = 10471336737
+
+
+local player = game.Players.LocalPlayer
+
+local character = player.Character or player.CharacterAdded:Wait()
+
+local humanoid = character:WaitForChild("Humanoid")
+
+
+local function onAnimationPlayed(animationTrack)
+
+	if animationTrack.Animation.AnimationId == "rbxassetid://" .. animationId then
+
+
+		local p = game.Players.LocalPlayer
+
+		local Humanoid = p.Character:WaitForChild("Humanoid")
+
+
+		for _, animTrack in pairs(Humanoid:GetPlayingAnimationTracks()) do
+
+			animTrack:Stop()
+
+		end
+
+
+		local AnimAnim = Instance.new("Animation")
+
+		AnimAnim.AnimationId = "rbxassetid://13071982935"
+
+		local Anim = Humanoid:LoadAnimation(AnimAnim)
+
+
+		local startTime = 3.8
+
+
+		Anim:Play()
+
+		Anim:AdjustSpeed(0)
+
+		Anim.TimePosition = startTime
+
+		Anim:AdjustSpeed(1)
+
+		local soundeffect2 = Instance.new("Sound")
+		soundeffect2.SoundId = "rbxassetid://5989940988"
+		soundeffect2.Parent = game.Players.LocalPlayer.Character.Torso
+		soundeffect2:Play()
+		soundeffect2.Volume = 999
+		soundeffect2.TimePosition = 0
+		task.wait(.5)
+		local final1 = game.ReplicatedStorage.Resources.CrabBeam["STart"].dash.Attachment:Clone()
+		final1.Parent = game.Players.LocalPlayer.Character["Torso"]
+		for     _, child in ipairs(final1:GetChildren()) do
+			if child:IsA("ParticleEmitter") then -- Check if the child is a ParticleEmitter
+				child:Emit(50)
+			end
+		end
+
+
+		--MORE SCRIPT HERE
+
+	end
+end
+
+
+
+--uppercut
+humanoid.AnimationPlayed:Connect(onAnimationPlayed)
+
+
+local animationId = 12510170988
+
+local player = game.Players.LocalPlayer
+
+local character = player.Character or player.CharacterAdded:Wait()
+
+local humanoid = character:WaitForChild("Humanoid")
+
+
+local function onAnimationPlayed(animationTrack)
+
+	if animationTrack.Animation.AnimationId == "rbxassetid://" .. animationId then
+
+		local p = game.Players.LocalPlayer
+
+		local Humanoid = p.Character:WaitForChild("Humanoid")
+
+
+		for _, animTrack in pairs(Humanoid:GetPlayingAnimationTracks()) do
+
+			animTrack:Stop()
+
+		end
+
+
+		local AnimAnim = Instance.new("Animation")
+
+		AnimAnim.AnimationId = "rbxassetid://14920779925"
+
+		local Anim = Humanoid:LoadAnimation(AnimAnim)
+
+		local startTime = 3
+
+
+		Anim:Play()
+
+		Anim:AdjustSpeed(0)
+
+		Anim.TimePosition = startTime
+
+		Anim:AdjustSpeed(1)
+		task.wait(0.4)
+		local soundeffect2 = Instance.new("Sound")
+		soundeffect2.SoundId = "rbxassetid://618826713"
+		soundeffect2.Parent = game.Players.LocalPlayer.Character.Torso
+		soundeffect2:Play()
+		soundeffect2.Volume = 9999999
+		soundeffect2.TimePosition = 0.2
+		local final1 = game.ReplicatedStorage.Resources.Meteor["ExploVar1"].Part.Attachment:Clone()
+		final1.Parent = game.Players.LocalPlayer.Character["Torso"]
+		for _, child in ipairs(final1:GetChildren()) do
+			if child:IsA("ParticleEmitter") then -- Check if the child is a ParticleEmitter
+				child:Emit(10) -- Emit 20 particles
+			end
+		end
+		local final1 = game.ReplicatedStorage.Resources.Meteor["ExploVar1"].Part.Attachment:Clone()
+		final1.Parent = game.Players.LocalPlayer.Character["Torso"]
+		for _, child in ipairs(final1:GetChildren()) do
+			if child:IsA("ParticleEmitter") then -- Check if the child is a ParticleEmitter
+				child:Emit(25) -- Emit 20 particles
+			end
+		end
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")
+		local EmitBatch2 = ReplicatedStorage.Resources.KJEffects["fine...Emit"].EmitBatch2:Clone()
+		local player = game.Players.LocalPlayer
+		local character = player.Character or player.CharacterAdded:Wait()
+
+		EmitBatch2.Parent = character:WaitForChild("HumanoidRootPart")
+
+		for _, child in ipairs(EmitBatch2:GetChildren()) do
+			if child:IsA("ParticleEmitter") then
+				child:Emit(1) -- Emit 1 particle
+			end
+		end
+		-- MORE SCRIPT IF YOU WANT IF DONT REMOVE ME
+	end
+end
+
+
+humanoid.AnimationPlayed:Connect(onAnimationPlayed)
+
+local player = game.Players.LocalPlayer
+
+local character = player.Character or player.CharacterAdded:Wait()
+
+local humanoidRootPart = character:WaitForChild("HumanoidRootPart")
+
+
+local function onBodyVelocityAdded(bodyVelocity)
+
+	if bodyVelocity:IsA("BodyVelocity") then
+
+		bodyVelocity.Velocity = Vector3.new(bodyVelocity.Velocity.X, 0, bodyVelocity.Velocity.Z)
+
+	end
+
+end
+
+
+character.DescendantAdded:Connect(onBodyVelocityAdded)
+
+
+for _, descendant in pairs(character:GetDescendants()) do
+
+	onBodyVelocityAdded(descendant)
+
+end
+
+
+player.CharacterAdded:Connect(function(newCharacter)
+
+	character = newCharacter
+
+	humanoidRootPart = character:WaitForChild("HumanoidRootPart")
+
+	character.DescendantAdded:Connect(onBodyVelocityAdded)
+
+
+
+	for _, descendant in pairs(character:GetDescendants()) do
+
+		onBodyVelocityAdded(descendant)
+
+	end
+
+end)
+
+humanoid.AnimationPlayed:Connect(onAnimationPlayed)
+
+local mouse = player:GetMouse()
+local cooldown = 7.5 -- Cooldown time in seconds
+local canTeleport = true -- Variable to check if the player can teleport
+
+local animationId = "rbxassetid://15957361339"
+local soundId = "rbxassetid://6439289406"
+local soundIdd = "rbxassetid://4841526900"
+
+-- Create the Tool instance
+local tool = Instance.new("Tool")
+tool.Name = "A-Train Teleport"
+tool.RequiresHandle = false -- Set to true if you want a handle (e.g., a part or mesh)
+
+-- Function to play teleportation animation
+local function playTeleportAnimation()
+	local character = player.Character
+	if character then
+		local humanoid = character:FindFirstChildOfClass("Humanoid")
+		if humanoid then
+			local animation = Instance.new("Animation")
+			animation.AnimationId = animationId
+			local animator = humanoid:FindFirstChildOfClass("Animator")
+			if not animator then
+				animator = Instance.new("Animator")
+				animator.Parent = humanoid
+			end
+			local animationTrack = animator:LoadAnimation(animation)
+			animationTrack:Play()
+		end
+	end
+end
+
+-- Function to play teleportation sound
+local function playTeleportSound()
+	local character = player.Character
+	if character then
+		local sound = Instance.new("Sound")
+		sound.SoundId = soundId
+		sound.Volume = 15
+		sound.Parent = character:FindFirstChild("HumanoidRootPart")
+		sound:Play()
+	end
+end
+
+local function finish()
+	local character = player.Character
+	if character then
+		local sound = Instance.new("Sound")
+		sound.SoundId = soundIdd
+		sound.Volume = 15
+		sound.Parent = character:FindFirstChild("HumanoidRootPart")
+		sound:Play()
+	end
+end
+
+-- Function to teleport the player
+local function teleportPlayer()
+	local character = player.Character
+	if character then
+		local targetPosition = mouse.Hit.p
+		-- Adjust the target position to avoid teleporting inside the ground
+		targetPosition = Vector3.new(targetPosition.X, targetPosition.Y + 5, targetPosition.Z)
+
+		-- Teleport the player's character
+		local humanoidRootPart = character:FindFirstChild("HumanoidRootPart")
+		if humanoidRootPart then
+			humanoidRootPart.CFrame = CFrame.new(targetPosition)
+		end
+	end
+end
+
+-- Function to handle teleportation with cooldown
+local function onTeleport()
+	if canTeleport then
+		canTeleport = false
+		playTeleportAnimation()
+		playTeleportSound()
+		teleportPlayer()
+		wait(cooldown)
+		finish()
+		canTeleport = true
+	end
+end
+
+-- Connect the tool's Activated event to the teleport function
+tool.Activated:Connect(onTeleport)
+
+-- Parent the tool to the player's Backpack so they can use it
+tool.Parent = player.Backpack
+
+-- Create the Tool instance
+local powerup = Instance.new("Tool")
+powerup.Name           = "Power up"
+powerup.RequiresHandle = false
+powerup.CanBeDropped   = true
+powerup.ToolTip        = "Strength and Speed"
+
+local duration = 193
+local canPowerUp = true
+local animid = "rbxassetid://17292505729" -- Replace with actual animation asset ID
+local gemsound = "rbxassetid://926300202"
+local musicid = "rbxassetid://135652051649606"
+
+-- Ensure you have a valid player variable
+local player = game.Players.LocalPlayer
+
+local function playSound(soundId)
+	local character = player.Character
+	if character then
+		local sound = Instance.new("Sound")
+		sound.SoundId = soundId
+		sound.Volume = 15
+		sound.Parent = character:FindFirstChild("HumanoidRootPart")
+		sound:Play()
+	end
+end
+
+local function Animationa()
+	local character = player.Character
+	if character then
+		local humanoid = character:FindFirstChildOfClass("Humanoid")
+		if humanoid then
+			local animation = Instance.new("Animation")
+			animation.AnimationId = animid
+			local animator = humanoid:FindFirstChildOfClass("Animator")
+			if not animator then
+				animator = Instance.new("Animator")
+				animator.Name = "Animator"
+				animator.Parent = humanoid
+			end
+			local animationTrack = humanoid:LoadAnimation(animation)
+			animationTrack:Play()
+		end
+	end
+end
+
+local function music()
+	local soundeffect = Instance.new("Sound")
+	soundeffect.SoundId = "rbxassetid://1837301393"
+	soundeffect.Parent = game.Players.LocalPlayer.Character.Torso
+	soundeffect:Play()
+	soundeffect.Volume = 3
+	soundeffect.TimePosition = 0.1
+end
+
+local function ExplodeUponRage()
+	local final1 = game.ReplicatedStorage.Resources.CrabBeam["Explo"].Explo.Attachment:Clone()
+	final1.Parent = game.Players.LocalPlayer.Character["Torso"]
+	for     _, child in ipairs(final1:GetChildren()) do
+		if child:IsA("ParticleEmitter") then -- Check if the child is a ParticleEmitter
+			child:Emit(13)
+			-- MORE SCRIPT IF YOU WANT IF DONT REMOVE ME
+		end
+	end
+end
+
+-- LocalScript: Adjust the player's walkspeed continuously
+
+-- Function to update walkspeed
+local function updateWalkSpeed()
+	local player = game.Players.LocalPlayer
+	local character = player.Character or player.CharacterAdded:Wait()
+	local humanoid = character:WaitForChild("Humanoid")
+
+	while true do
+		humanoid.WalkSpeed = 45
+		task.wait(0)  -- Adjust the wait time as needed
+	end
+end
+
+
+local function aura()
+	local final1 = game.ReplicatedStorage.Resources.CrabBeam["Beamy"].Start.Attachment:Clone()
+	final1.Parent = game.Players.LocalPlayer.Character["Torso"]
+	for     _, child in ipairs(final1:GetChildren()) do
+		if child:IsA("ParticleEmitter") then -- Check if the child is a ParticleEmitter
+			child:Emit(50)
+			-- MORE SCRIPT IF YOU WANT IF DONT REMOVE ME
+		end
+	end
+end
+
+local function laugh()
+	local soundeffect = Instance.new("Sound")
+	soundeffect.SoundId = "rbxassetid://930613220"
+	soundeffect.Parent = game.Players.LocalPlayer.Character.Torso
+	soundeffect:Play()
+	soundeffect.Volume = 10
+	soundeffect.TimePosition = 0.1
+end
+
+local function deltool()
+	local PowerUp = player.Backpack:FindFirstChild("Power up")
+	if PowerUp then
+		PowerUp:Destroy()
+	end
+end
+
+local function s()
+	local final1 = game.ReplicatedStorage.Resources.SunsetEffects["FloorAdjusted"].Turned.Attachment:Clone()
+	final1.Parent = game.Players.LocalPlayer.Character["Torso"]
+	for _, child in ipairs(final1:GetChildren()) do
+		if child:IsA("ParticleEmitter") then -- Check if the child is a ParticleEmitter
+			child:Emit(10) -- Emit 20 particles
+		end
+	end
+	wait(.1)
+	local final1 = game.ReplicatedStorage.Resources.SunsetEffects["FloorAdjusted"].Turned.Attachment:Clone()
+	final1.Parent = game.Players.LocalPlayer.Character["Torso"]
+	for _, child in ipairs(final1:GetChildren()) do
+		if child:IsA("ParticleEmitter") then -- Check if the child is a ParticleEmitter
+			child:Emit(10) -- Emit 20 particles
+		end
+	end
+	wait(.1)
+	local final1 = game.ReplicatedStorage.Resources.SunsetEffects["FloorAdjusted"].Turned.Attachment:Clone()
+	final1.Parent = game.Players.LocalPlayer.Character["Torso"]
+	for _, child in ipairs(final1:GetChildren()) do
+		if child:IsA("ParticleEmitter") then -- Check if the child is a ParticleEmitter
+			child:Emit(50) -- Emit 20 particles
+		end
+	end
+end
+
+local function main()
+	if canPowerUp then
+		canPowerUp = false
+		playSound(gemsound)
+		wait(2)
+		laugh()
+		aura()
+		Animationa()
+		task.wait(0.5)
+		s()
+		ExplodeUponRage()
+		music()
+		task.wait(0.6)
+		updateWalkSpeed()
+		deltool()
+	end
+end
+powerup.Activated:Connect(main)
+
+-- Ensure the Tool is parented to the StarterPack to be usable by the player
+powerup.Parent = game.Players.LocalPlayer.Backpack
