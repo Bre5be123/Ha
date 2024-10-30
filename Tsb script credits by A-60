@@ -1087,7 +1087,7 @@ Callback = <function> - The function of the button.
 Tab:AddButton({
 	Name = "Gojo V2 Moveset (Hero Hunter)",
 	Callback = function()
-      		loadstring(game:HttpGet("https://raw.githubusercontent.com/Bre5be123/Blahblahblah/refs/heads/main/Justincase?token=GHSAT0AAAAAACYTRGTUINUWCEL2Q2B67X5YZYXHS7Q"))()
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/Bre5be123/Ha/refs/heads/main/README"))()
   	end    
 })
 
