@@ -1274,6 +1274,20 @@ Name = <string> - The name of the button.
 Callback = <function> - The function of the button.
 ]]
 
+Tab:AddButton({
+	Name = "Minos Prime V2 Moveset (Hero Hunter)",
+	Callback = function()
+      		_G.SkipIntro = true -- set to true if you want to skip the intro
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/hamletirl/MinosPrimeTest/refs/heads/main/Prime"))()
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
 local Tab = Window:MakeTab({
 	Name = "Scripts Hubs",
 	Icon = "rbxassetid://4483345998",
