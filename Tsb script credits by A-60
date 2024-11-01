@@ -1275,7 +1275,7 @@ Callback = <function> - The function of the button.
 ]]
 
 Tab:AddButton({
-	Name = "Minos Prime V2 Moveset (Hero Hunter)",
+	Name = "Minos Prime V3 Moveset (Hero Hunter)",
 	Callback = function()
       		_G.SkipIntro = true -- set to true if you want to skip the intro
 
