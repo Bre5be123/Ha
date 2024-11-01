@@ -273,7 +273,7 @@ Callback = <function> - The function of the button.
 Tab:AddButton({
 	Name = "Arcaura/Jester Moveset (Hero Hunter)",
 	Callback = function()
-      		loadstring(game:HttpGet("https://raw.githubusercontent.com/Reapvitalized/TSB/refs/heads/main/ARCAURA.lua"))()
+      		loadstring(game:HttpGet("https://rawscripts.net/raw/The-Strongest-Battlegrounds-ARACAURA-script-unfinished-credits-to-reap-19779"))()
   	end    
 })
 
@@ -1280,6 +1280,18 @@ Tab:AddButton({
       		_G.SkipIntro = true -- set to true if you want to skip the intro
 
 loadstring(game:HttpGet("https://raw.githubusercontent.com/hamletirl/MinosPrimeTest/refs/heads/main/Prime"))()
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+Tab:AddButton({
+	Name = "Greeny Moveset (The Strongest Hero)",
+	Callback = function()
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/D5v5dzzz/Greeny-SCript-V2/refs/heads/main/Greeny%20Script%20Upd%20V2"))()
   	end    
 })
 
