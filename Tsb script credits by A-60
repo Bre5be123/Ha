@@ -1315,6 +1315,18 @@ Callback = <function> - The function of the button.
 Tab:AddButton({
 	Name = "Shibuya Toji V2 Moveset (The Strongest Hero)",
 	Callback = function()
+      		loadstring(game:HttpGet("https://pastefy.app/Z59beSzJ/raw"))()
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+Tab:AddButton({
+	Name = "Shibuya Toji V3 Moveset (The Strongest Hero)",
+	Callback = function()
       		loadstring(game:HttpGet("https://raw.githubusercontent.com/FlowersTsb/Moveset/refs/heads/main/ShibuyaToji"))()
   	end    
 })
