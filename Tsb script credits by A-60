@@ -133,7 +133,7 @@ Callback = <function> - The function of the button.
 Tab:AddButton({
 	Name = "Sonic Moveset (Hero Hunter)",
 	Callback = function()
-      		loadstring(game:HttpGet("https://pastebin.com/raw/7V1mUBtQ"))()
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/Bre5be123/Ha/refs/heads/main/Snic"))()
   	end    
 })
 
@@ -1159,7 +1159,7 @@ Callback = <function> - The function of the button.
 Tab:AddButton({
 	Name = "Gojo Domain Moveset (The Strongest Hero)",
 	Callback = function()
-      		loadstring(game:HttpGet("https://raw.githubusercontent.com/Bre5be123/Wiwi/refs/heads/main/Haha?token=GHSAT0AAAAAACZY2CKA2SUPW6LKLV4RITQIZZDFCMQ"))()
+      		loadstring(game:HttpGet("https://pastebin.com/raw/777Q4QDN",true))()
   	end    
 })
 
